@@ -28,12 +28,6 @@ def lambda_handler(event, context):
             if not isinstance(data, dict) or len(data) == 0:
                 raise ValueError("API did not return a list of records")
 
-            # # Convert JSON to CSV
-            # output = io.StringIO()
-            # writer = csv.DictWriter(output, fieldnames=data[0].keys())
-            # writer.writeheader()
-            # writer.writerows(data)
-
 
             #2. Upload to S3 using the table name in the path
             s3.put_object(
@@ -41,14 +35,7 @@ def lambda_handler(event, context):
                 Key=f'raw_data/{table}/{table}_extract.json',
                 Body=json.dumps(data)
             )
-            # Upload CSV to S3
-            # s3.put_object(
-            #     Bucket=bucket,
-            #     Key=f'raw_data/{table}/{table}_extract.csv',
-            #     Body=output.getvalue(),
-            #     ContentType='text/csv'
-            # )
-
+            
             results.append(f"Successfully processed {table}")
             
         except Exception as e:
