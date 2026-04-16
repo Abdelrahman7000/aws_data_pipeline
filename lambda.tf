@@ -25,7 +25,7 @@ resource "aws_lambda_function" "lambda_extract" {
 
   environment {
     variables = {
-      BASE_API_URL = "https://top-very-adjacent-therefore.trycloudflare.com"
+      BASE_API_URL = "https://names-betty-tea-newcastle.trycloudflare.com"
       BUCKET_NAME  = aws_s3_bucket.my_bucket.id
     }
   }
