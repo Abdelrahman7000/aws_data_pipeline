@@ -2,7 +2,7 @@
 <img width="1408" height="768" alt="arch" src="https://github.com/user-attachments/assets/3d92a791-1dde-4aa7-89de-e9c720a04d99" />
 
 <h2>Project Purpose</h2>
-This project aims to build end-to-end data pipeline that extracts an on-premise SQL Server database into a Cloud storage. 
+This project aims to build end-to-end data pipeline that extracts an on-premise SQL Server database into a Cloud storage using Delta lake structure. 
 In this project we are moving the data from local infrastructure to the cloud via batch mode.
 
 <h2>Tech Stack</h2>
