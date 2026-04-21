@@ -1,8 +1,8 @@
 <h2>Architecture</h2>
-<img width="1408" height="768" alt="arch" src="https://github.com/user-attachments/assets/f6efeca6-cf1c-4465-bb50-90411740dc06" />
+<img width="1408" height="768" alt="arch" src="https://github.com/user-attachments/assets/3d92a791-1dde-4aa7-89de-e9c720a04d99" />
 
 <h2>Project Purpose</h2>
-This project aims to build end-to-end data pipeline that extracts an on-premise SQL Server database into a Data Warehouse (Snowflake). 
+This project aims to build end-to-end data pipeline that extracts an on-premise SQL Server database into a Cloud storage. 
 In this project we are moving the data from local infrastructure to the cloud via batch mode.
 
 <h2>Tech Stack</h2>
@@ -15,7 +15,7 @@ In this project we are moving the data from local infrastructure to the cloud vi
 <li>Compute & Ingestion: AWS Lambda (Extraction), AWS EMR (Distributed PySpark Transformation)</li>
 <li>Storage: AWS S3 (Data Lake)</li>
 <li>Monitoring: AWS SNS (Email alerting on failure)</li>
-<li>Data Warehouse: Snowflake (External tables over S3)</li>
+<li>Data Analysis: Athena</li>
 </ul>
 
 <h2>Key Features</h2>
