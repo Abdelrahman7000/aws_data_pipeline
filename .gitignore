@@ -1,3 +1,10 @@
 .terraform/
 *.tfstate
 *.tfstate.*
+.env
+.tfstate.backup
+.tfstate
+.gitignore
+*.tfstate*
+terraform.tfstate
+terraform.tfstate.backup
