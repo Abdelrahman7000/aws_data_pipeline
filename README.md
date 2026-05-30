@@ -26,6 +26,15 @@ In this project we are moving the data from local infrastructure to the cloud vi
   <li>Distributed Processing: Builds star schema model using pyspark scripts via EMR cluster.</li>
 </ul>
 
+<h2>How To start</h2>
+you can run the api app via:
+
+`uvicorn app:app --host 0.0.0.0 --port 8000 --reload`
+
+Then use Cloudflare to create a public URL:
+
+`cloudflared tunnel --url http://localhost:8000`
+
 <h2>Monitoring & Alerts</h2>
 The AWS Step Function logic checks if the Lambda or the EMR Spark Job fails:
 <ul>
